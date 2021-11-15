@@ -1,16 +1,10 @@
-var catSays = function(max) {
-  var catMessage = "";
-  for (var i = 0; i < max; i++) {
-    catMessage += "meow ";
-  }
-  return catMessage;
-};
+let sum = 3 + 2;
 
-// function declaration helloCat accepting a callback
-function helloCat(callbackFunc) {
-  return "Hello " + callbackFunc(3);
+const doubleSum = function(a, b) {
+  let sum = a + b;
+  return sum * 2;
 }
 
-// pass in catSays as a callback function
-helloCat(catSays);
-helloCat()
+doubleSum(5, 4);
+
+console.log(sum);
